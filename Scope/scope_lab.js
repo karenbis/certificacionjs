@@ -15,8 +15,8 @@ console.log(globalLet); // Salida: "También soy global, pero con alcance de let
 console.log(globalConst); // Salida: "Soy una constante global"
 
 //Block Scope
-console.log(blockVar);
-console.log(blockLet);
+// console.log(blockVar);
+// console.log(blockLet);
 
 function show(){
 var functionVar = "Soy una var con alcance de bloque";
