@@ -17,3 +17,14 @@ console.log(globalConst); // Salida: "Soy una constante global"
 //Block Scope
 console.log(blockVar);
 console.log(blockLet);
+
+function show(){
+var functionVar = "Soy una var con alcance de bloque";
+let functionLet = "Soy un let con alcance de bloque";
+const functionConst = "Soy un const con alcance de bloque";
+}
+show();
+
+console.log(functionVar); // Lanza ReferenceError
+console.log(functionLet); // Lanza ReferenceError
+console.log(functionConst); // Lanza ReferenceError
