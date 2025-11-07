@@ -53,3 +53,19 @@ let isAuthenticated = true;
 let authenticationStatus = isAuthenticated ? "Authenticated" : "Not authenticated";
 
 console.log("Authentication Status:", authenticationStatus);
+
+// ejercicio 
+let user = "empleado";
+let access;
+
+if (user === "empleado") {
+    access = "Acceso a servicios dietéticos";
+    } else if (userRole === "miembroinscrito") {
+    access = "Acceso a servicios dietéticos y a interacción con un dietista";
+    } else if (userRole === "suscriptor") {
+    access = "Acceso parcial para facilitar servicios dieteticos solamente";
+} else {
+    access = "Necesitas inscribirte o al menos suscribirte primero para acceder a esta instalación";
+}
+
+console.log("Acceso:", access);
