@@ -25,4 +25,5 @@ function checkCountValue() {
 function restartCount() {
     count= 0 ;
     document.getElementById('countDisplay').innerHTML=count; // Mostrar el conteo en el HTML
+    alert("Tu contador de seguidores ha sido reseteado, ya no eres popular");
     }
