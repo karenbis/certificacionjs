@@ -21,3 +21,8 @@ function checkCountValue() {
     alert("¡Tu publicación de Instagram ganó 20 seguidores! ¡Sigue así!");
   }
 }
+
+function restartCount() {
+    count= 0 ;
+    document.getElementById('countDisplay').innerHTML=count; // Mostrar el conteo en el HTML
+    }
