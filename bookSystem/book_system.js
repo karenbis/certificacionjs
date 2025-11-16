@@ -44,10 +44,20 @@ function editbook(index) {
     showbooks(); // Actualizar lista
   }
 
+  function deletebook(index) {
+    console.log(`Eliminando libro en el índice: ${index}`); // Para depuración
+    // elimina 1 elemento a partir del índice indicado
+    books.splice(index, 1);
+
+    // actualiza la lista mostrada después de eliminar
+    showbooks();
+    
+}
+
 //para limpiar los detalles del libro en el sistema de gestión
- function clearInputs() {
-            document.getElementById('bookName').value = '';
-            document.getElementById('authorName').value = '';
-            document.getElementById('bookDescription').value = '';
-            document.getElementById('pagesNumber').value = '';
- }
+function clearInputs() {
+    document.getElementById('bookName').value = '';
+    document.getElementById('authorName').value = '';
+    document.getElementById('bookDescription').value = '';
+    document.getElementById('pagesNumber').value = '';
+}
